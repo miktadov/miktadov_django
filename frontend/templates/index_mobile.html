@@ -1,0 +1,255 @@
+<!--{% load static %}-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/skn8ash.css">                                              <!-- CONSTRUCTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">  <!-- CONSTRUCTION -->
+    <link rel="stylesheet" href="{% static 'css/stylesheets/scroll_construction_mob.css' %}">                                          <!-- CONSTRUCTION -->
+    <link rel="stylesheet" href="{% static 'css/stylesheets/general_box.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <title>MIKTADOV</title>
+</head>
+<body>
+
+  <div class="container w-parent">
+
+    <section style="height: 85vh;" data-bgcolor="#000000" data-textcolor="#032f35">
+      <div class="contact_me">
+        <table>
+          <tr>
+            <td id="telephone">My telephone: </td>
+            <td><a href="tel:+79895004060">8(989)500-40-60</a></td>
+          </tr>
+          <tr>
+            <td>My Email: </td>
+            <td><a href="mailto:alex.miktadov@gmail.com&cc=miktadov.work@gmail.com?body=Доброго времени суток. Свяжитесь с нами, у нас есть для вас предложение по работе.">alex.miktadov@gmail.com</a></td>
+          </tr>
+<!--          <tr>-->
+<!--            <td></td>-->
+<!--            <td><a href="index.html">desktop version</a></td>-->
+<!--          </tr>-->
+        </table>
+        <div><p class="contact_btn">contact</p></div>
+      </div>
+      <div class="overlay">
+        
+        <div class="w-child"><!--Waves Container-->
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,0,0,0.7" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,0,0,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,0,0,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="black" />
+            </g>
+          </svg>
+        </div><!--Waves end-->
+        
+      </div>
+      <div class="text">
+        <div class="wrapper">
+          <div id="L" class="letter">M</div>
+          <div class="shadow">M</div>
+        </div>
+        <div class="wrapper">
+          <div id="I" class="letter">I</div>
+          <div class="shadow">I</div>
+        </div>
+        <div class="wrapper">
+          <div id="G" class="letter">K</div>
+          <div class="shadow">K</div>
+        </div>
+        <div class="wrapper">
+          <div id="H" class="letter">T</div>
+          <div class="shadow">T</div>
+        </div>
+        <div class="wrapper">
+          <div id="T" class="letter">A</div>
+          <div class="shadow">A</div>
+        </div>
+        <div class="wrapper">
+          <div id="N" class="letter">D</div>
+          <div class="shadow">D</div>
+        </div>
+        <div class="wrapper">
+          <div id="E" class="letter">O</div>
+          <div class="shadow">O</div>
+        </div>
+        <div class="wrapper">
+          <div id="S" class="letter">V</div>
+          <div class="shadow">V</div>
+        </div>
+      </div>
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-primary alert-dismissible fade show" role="alert" style="max-width:50vw; text-align: center;">
+             {{ message }} <br>
+             <button type="button" class="btn-close" style="border: None;" data-bs-dismiss="alert" aria-label="Close">hide message</button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </section>
+
+    <section id="sectionPin">
+      <div class="pin-wrap">
+
+        <div class="box first"><!-- About me -->
+          <h2 class="text-box">Hi. My name is Aleksey. I am a full stack Python developer. If you have a job offer or just want to get to know me, then I will be glad if you contact me or leave your contacts for communication with you.</h2>
+        </div>
+        <div class="box"><!-- My photo -->
+          <img src="{% static 'images/me.jpg' %}" alt="">
+        </div>
+        <div class="box"><!-- My skils -->
+          <div class="inbox">
+            <h3>In my work I use:</h3>
+            <ul class="skills">
+              <li>Python</li>
+              <li>Django</li>
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JS</li>
+              <li>GIT</li>
+              <li>Docker</li>
+              <li>
+                <div class="l-1 letter">L</div>
+                <div class="l-2 letter">e</div>
+                <div class="l-3 letter">a</div>
+                <div class="l-4 letter">r</div>
+                <div class="l-5 letter">n</div>
+                <div class="l-6 letter">i</div>
+                <div class="l-7 letter">n</div>
+                <div class="l-8 letter">g</div>
+                <div class="l-9 letter">.</div>
+                <div class="l-10 letter">.</div>
+                <div class="l-11 letter">.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box"><!-- My link -->
+            <h2 class="text-box">You can see my work and my social networks. Also note that this site is my work with the exception of public libraries.</h2>
+            <div class="social_icons">
+              <a href="https://instagram.com/alex.miktadov"><i class="fa fa-instagram" id="instagram"></i></a>
+              <a href="https://vk.com/alex.miktadov"><i class="fa fa-vk" id="vk"></i></a>
+              <a href="https://github.com/miktadov"><i class="fa fa-github-square github" id="github"></i></a>
+              <a href=""><i class="fa fa-facebook-square" id="facebook"></i></a>
+            </div>
+        </div>
+        <div class="box"><!-- Form -->
+          <div>
+            <form id="my_form" action="{% url 'feed' %}" enctype="multipart/form-data" method ="POST">
+              {% csrf_token %}
+              <h2>Contact Form</h2>
+              <input type="text" required name="user_name" placeholder="Your Name">
+              <input type="text" required name="user_contact" placeholder="Means of communication">
+              <input type="text" required name="user_message" placeholder="Message">
+              <button class="button" type="submit">Contact</button>
+            </form>
+          </div>
+        </div>
+        <div class="box hobbies"><!-- About me -->
+          <div style="width: 100%;">
+
+            <h2 class="text-box">If you want to know about my knowledge and skills, then it is better to contact me. If you want to get to know me better, then I will gladly tell you about my hobbies and outlook on life.</h2>
+            <h2 class="text-box">In people, I value kindness, sincerity and the desire to self-develop. I believe that work should be enjoyable as it makes up a large part of a waking life. My profession brings me pleasure.</h2>
+            <h2 class="text-box">I would like to participate in the implementation of some major project that will be very useful for people. This would be my most significant project in my life.</h2>
+
+          </div>
+        </div>
+        <div class="box"><!-- Hobbies -->
+          <div>
+  
+            <h3 class="text-box">I like:</h3>
+            <ul class="ul-box">
+              <li>playing the guitar.</li>
+              <li>snowboarding.</li>
+              <li>to play airsoft.</li>
+              <li>to ride a motorcycle.</li>
+              <li>writing programs.</li>
+              <li>to create electrical mechanisms.</li>
+              <li>taking pictures.</li>
+              <li>to learn something new.</li>
+              <li>to make people around me happy.</li>
+              <li>to create lists and structure everything.</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="box" style="margin: 0 50vw;">
+          <h2>=)</h2>
+        </div>
+
+      </div>
+    </section>
+
+    <section data-bgcolor="#e3857a" data-textcolor="#f1dba7">
+      <div class="cont">
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div class="map">
+        <h2>I'm here</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676.3600876461993!2d39.72531092924073!3d47.30573530808238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3c955d7444f6b%3A0xd508397c92cf008a!2z0JvRg9C90L3Ri9C5INC_0LXRgNC10YPQu9C-0LosIDEsINCg0L7RgdGC0L7Qsi3QvdCwLdCU0L7QvdGDLCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0LsuLCAzNDQwNDE!5e0!3m2!1sru!2sru!4v1637704372452!5m2!1sru!2sru" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+        <table>
+          <tr>
+            <td id="telephone2">My telephone: </td>
+            <td><a href="tel:+79895004060">8(989)500-40-60</a></td>
+          </tr>
+          <tr>
+            <td>My Email: </td>
+            <td><a href="mailto:alex.miktadov@gmail.com">alex.miktadov@gmail.com</a></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+<div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>                      CONSTRUCTION -->
+  <!-- <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>                                 CONSTRUCTION -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> CONSTRUCTION -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- <script src="js/scroll_construction.js"></script>                                                          CONSTRUCTION -->
+</div>
+</html>

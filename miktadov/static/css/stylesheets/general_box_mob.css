@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Yanone+Kaffeesatz:wght@200&display=swap");
+/* line 3, ../sass/general_box_mob.scss */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: 100;
+  background: white;
+  background: linear-gradient(0deg, white 75%, rgba(255, 255, 255, 0.9) 80%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* line 21, ../sass/general_box_mob.scss */
+.text {
+  font-family: "Yanone Kaffeesatz";
+  font-size: 9vw;
+  display: flex;
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+}
+/* line 31, ../sass/general_box_mob.scss */
+.text .wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+/* line 35, ../sass/general_box_mob.scss */
+.text .wrapper .letter {
+  transition: ease-out 4s;
+  transform: translateY(35%);
+}
+/* line 39, ../sass/general_box_mob.scss */
+.text .wrapper .shadow {
+  transform: scale(1, -1);
+  color: #999;
+  transition: ease 5s, ease-out 5s;
+}
+/* line 45, ../sass/general_box_mob.scss */
+.text .wrapper:hover .letter {
+  transform: translateY(-50%);
+}
+/* line 48, ../sass/general_box_mob.scss */
+.text .wrapper:hover .shadow {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+/* line 56, ../sass/general_box_mob.scss */
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+/* Animation */
+/* line 66, ../sass/general_box_mob.scss */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+/* line 69, ../sass/general_box_mob.scss */
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 30s;
+}
+
+/* line 73, ../sass/general_box_mob.scss */
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 35s;
+}
+
+/* line 77, ../sass/general_box_mob.scss */
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 40s;
+}
+
+/* line 81, ../sass/general_box_mob.scss */
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 45s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  /* line 95, ../sass/general_box_mob.scss */
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+/* line 101, ../sass/general_box_mob.scss */
+.w-child {
+  position: absolute;
+  bottom: -2px;
+  right: 0px;
+  left: 0px;
+}
+
+/* line 108, ../sass/general_box_mob.scss */
+.contact_me {
+  color: #a1a1a1;
+  font-size: 19px;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: top 2s ease;
+}
+/* line 123, ../sass/general_box_mob.scss */
+.contact_me table {
+  margin: auto;
+}
+/* line 127, ../sass/general_box_mob.scss */
+.contact_me a {
+  color: #a1a1a1;
+  margin-left: 10px;
+}
+/* line 131, ../sass/general_box_mob.scss */
+.contact_me div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 136, ../sass/general_box_mob.scss */
+.contact_me .contact_btn {
+  width: max-content;
+  margin-top: 25px;
+  margin-right: 50px;
+  transition: opacity 0.2s ease 2s;
+  opacity: 1;
+}
+
+/* line 144, ../sass/general_box_mob.scss */
+.contact_me:hover {
+  transition: top 2s ease 0.2s;
+  top: 10px;
+}
+/* line 148, ../sass/general_box_mob.scss */
+.contact_me:hover .contact_btn {
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+@media screen and (max-width: 518px) {
+  /* line 155, ../sass/general_box_mob.scss */
+  .contact_me {
+    font-size: 14px;
+    top: -80px;
+  }
+  /* line 158, ../sass/general_box_mob.scss */
+  .contact_me a {
+    margin: 0;
+  }
+
+  /* line 162, ../sass/general_box_mob.scss */
+  .text .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 368px) {
+  /* line 168, ../sass/general_box_mob.scss */
+  .contact_me {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  /* line 173, ../sass/general_box_mob.scss */
+  .text .wrapper {
+    font-size: 100px;
+  }
+}

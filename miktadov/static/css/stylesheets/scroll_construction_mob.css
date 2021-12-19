@@ -1,0 +1,620 @@
+/* line 1, ../sass/scroll_construction_mob.scss */
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 5, ../sass/scroll_construction_mob.scss */
+:root {
+  --text-color: #000000;
+  --bg-color: #b9b3a9;
+  --off: #3d182e;
+  --on: #eb61b6;
+  --text_1: #1b1b1b;
+  --text_2: #8f8f8f;
+  --off_1: 3px;
+  --off_2: 15px;
+  --on_1: 5px;
+  --on_2: 30px;
+  --press_1: 3px;
+  --press_2: 10px;
+  --clr-neon: #eb618f;
+  --clr-white: white;
+}
+
+/* line 21, ../sass/scroll_construction_mob.scss */
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: termina, sans-serif;
+  color: var(--text-color);
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+}
+
+/* line 32, ../sass/scroll_construction_mob.scss */
+section:not(#sectionPin) {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  margin: auto;
+  place-items: center;
+}
+
+/* line 43, ../sass/scroll_construction_mob.scss */
+img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 48, ../sass/scroll_construction_mob.scss */
+h2 {
+  font-size: 2vh;
+}
+
+/* line 51, ../sass/scroll_construction_mob.scss */
+h3 {
+  display: inline;
+}
+
+/* line 54, ../sass/scroll_construction_mob.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 61, ../sass/scroll_construction_mob.scss */
+#sectionPin {
+  overflow-x: hidden;
+  display: flex;
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* line 67, ../sass/scroll_construction_mob.scss */
+.pin-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+/* line 73, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box {
+  height: 100vh;
+  width: 100%;
+  max-width: 750px;
+  padding: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 84, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .text-box {
+  padding: 0;
+  text-align: justify;
+}
+/* line 89, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills {
+  display: table-cell;
+}
+/* line 92, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .letter {
+  animation-name: loadingF;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 102, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-1 {
+  animation-delay: 0.48s;
+}
+/* line 105, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-2 {
+  animation-delay: 0.6s;
+}
+/* line 108, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-3 {
+  animation-delay: 0.72s;
+}
+/* line 111, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-4 {
+  animation-delay: 0.84s;
+}
+/* line 114, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-5 {
+  animation-delay: 0.96s;
+}
+/* line 117, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-6 {
+  animation-delay: 1.08s;
+}
+/* line 120, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-7 {
+  animation-delay: 1.2s;
+}
+/* line 123, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-8 {
+  animation-delay: 1.32s;
+}
+/* line 126, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-9 {
+  animation-delay: 1.44s;
+}
+/* line 129, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-10 {
+  animation-delay: 1.56s;
+}
+/* line 132, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-10 {
+  animation-delay: 1.68s;
+}
+/* line 135, ../sass/scroll_construction_mob.scss */
+.pin-wrap .box .skills .l-11 {
+  animation-delay: 1.80s;
+}
+@keyframes loadingF {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 157, ../sass/scroll_construction_mob.scss */
+.social_icons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+/* line 165, ../sass/scroll_construction_mob.scss */
+.social_icons #vk,
+.social_icons #instagram,
+.social_icons #github,
+.social_icons #facebook {
+  font-size: 4em;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 30px 30px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+}
+/* line 183, ../sass/scroll_construction_mob.scss */
+.social_icons #twitter {
+  animation-delay: 0.3s;
+}
+/* line 186, ../sass/scroll_construction_mob.scss */
+.social_icons #facebook {
+  animation-delay: 0.7s;
+}
+/* line 189, ../sass/scroll_construction_mob.scss */
+.social_icons #github {
+  animation-delay: 0.1s;
+}
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+/* line 208, ../sass/scroll_construction_mob.scss */
+form {
+  padding: 40px 70px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 1rem;
+  transition: box-shadow 1s ease 0.1s;
+  box-shadow: 0px 0px var(--off_1) var(--off), 0px 0px var(--off_2) var(--off);
+}
+/* line 217, ../sass/scroll_construction_mob.scss */
+form h2 {
+  text-align: center;
+  transition: color 3s ease;
+  color: var(--text_1);
+  margin: -10px 0 34px 0;
+}
+
+/* line 224, ../sass/scroll_construction_mob.scss */
+form:hover {
+  transition: box-shadow 1s ease 0.1s;
+  box-shadow: 0 0 var(--on_1) var(--on), 0 0 var(--on_2) var(--on);
+}
+/* line 229, ../sass/scroll_construction_mob.scss */
+form:hover h2 {
+  transition: color 1s ease;
+  color: var(--text_2);
+}
+
+/* line 234, ../sass/scroll_construction_mob.scss */
+input {
+  background-color: black;
+  color: var(--clr-neon);
+  width: 100%;
+  display: block;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  border-style: none;
+  border-radius: 1rem;
+  transition: box-shadow 1s ease 0.1s;
+  box-shadow: inset 0px 0px var(--off_1) var(--off), inset 0px 0px var(--off_2) var(--off);
+}
+
+/* line 250, ../sass/scroll_construction_mob.scss */
+input:hover {
+  transition: box-shadow 1s ease 0.1s;
+  box-shadow: inset 0px 0px var(--on_1) var(--on), inset 0px 0px var(--on_2) var(--on);
+}
+
+/* line 255, ../sass/scroll_construction_mob.scss */
+input:focus {
+  outline: none;
+  transition: box-shadow 1s ease 0.1s;
+  box-shadow: inset 0px 0px var(--on_1) var(--on), inset 0px 0px var(--on_2) var(--on);
+}
+
+/* line 261, ../sass/scroll_construction_mob.scss */
+input:active {
+  transition: box-shadow 1s ease 0.1s;
+}
+
+/* line 264, ../sass/scroll_construction_mob.scss */
+input::placeholder {
+  font-weight: 300;
+  transition: color 3s ease;
+  color: var(--text_1);
+}
+
+/* line 269, ../sass/scroll_construction_mob.scss */
+input:hover::placeholder {
+  transition: color 1s ease;
+  color: var(--text_2);
+}
+
+/* line 273, ../sass/scroll_construction_mob.scss */
+.button {
+  font-size: 2em;
+  display: block;
+  width: max-content;
+  margin: 50px auto -85px auto;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #9c405f;
+  border: #9c405f 4px solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.55), 0 0 0.5em currentColor;
+  box-shadow: inset 0 0 0.1em 0 var(--clr-neon), 0 0 0.3em 0 var(--clr-neon);
+  position: relative;
+}
+
+/* line 296, ../sass/scroll_construction_mob.scss */
+.button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1.2em) rotateX(40deg) scale(1.5, 0.5);
+  filter: blur(1.15em);
+  opacity: 0.7;
+  transition: transform 0.5s linear;
+}
+
+/* line 312, ../sass/scroll_construction_mob.scss */
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 4em 0.6em var(--clr-neon), 0 0 1em 0.2em var(--clr-white);
+  opacity: 0;
+  background: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+}
+
+/* line 325, ../sass/scroll_construction_mob.scss */
+.button:hover,
+.button:focus {
+  color: #f8719e;
+  border-color: #f8719e;
+  text-shadow: none;
+}
+
+/* line 332, ../sass/scroll_construction_mob.scss */
+.button:hover::before,
+.button:focus::before {
+  opacity: 1;
+  transform: perspective(1em) rotateX(40deg) scale(1.5, 0.6);
+  transition: transform 0.5s linear;
+}
+
+/* line 338, ../sass/scroll_construction_mob.scss */
+.button:hover::after,
+.button:focus::after {
+  opacity: 1;
+}
+
+/* line 347, ../sass/scroll_construction_mob.scss */
+.cont {
+  width: 100%;
+  height: 101%;
+  position: relative;
+  overflow: hidden;
+  border-top: 15px solid black;
+  border-bottom: 15px solid black;
+  filter: url("#goo");
+}
+/* line 356, ../sass/scroll_construction_mob.scss */
+.cont .drip {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: -100%;
+  animation: falling 5s linear infinite;
+}
+@keyframes falling {
+  0% {
+    top: -20%;
+  }
+  88% {
+    top: 0%;
+  }
+  93% {
+    top: 30%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(1) {
+  border-color: black;
+  height: 23px;
+  width: 23px;
+  animation-delay: -0.2s;
+  background: black;
+  left: 23vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(2) {
+  border-color: black;
+  height: 35px;
+  width: 35px;
+  animation-delay: -0.4s;
+  background: black;
+  left: 51vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(3) {
+  border-color: black;
+  height: 30px;
+  width: 30px;
+  animation-delay: -0.6s;
+  background: black;
+  left: 25vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(4) {
+  border-color: black;
+  height: 29px;
+  width: 29px;
+  animation-delay: -0.8s;
+  background: black;
+  left: 34vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(5) {
+  border-color: black;
+  height: 23px;
+  width: 23px;
+  animation-delay: -1s;
+  background: black;
+  left: 52vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(6) {
+  border-color: black;
+  height: 24px;
+  width: 24px;
+  animation-delay: -1.2s;
+  background: black;
+  left: 72vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(7) {
+  border-color: black;
+  height: 36px;
+  width: 36px;
+  animation-delay: -1.4s;
+  background: black;
+  left: 10vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(8) {
+  border-color: black;
+  height: 26px;
+  width: 26px;
+  animation-delay: -1.6s;
+  background: black;
+  left: 19vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(9) {
+  border-color: black;
+  height: 31px;
+  width: 31px;
+  animation-delay: -1.8s;
+  background: black;
+  left: 57vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(10) {
+  border-color: black;
+  height: 24px;
+  width: 24px;
+  animation-delay: -2s;
+  background: black;
+  left: 96vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(11) {
+  border-color: black;
+  height: 30px;
+  width: 30px;
+  animation-delay: -2.2s;
+  background: black;
+  left: 81vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(12) {
+  border-color: black;
+  height: 31px;
+  width: 31px;
+  animation-delay: -2.4s;
+  background: black;
+  left: 53vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(13) {
+  border-color: black;
+  height: 36px;
+  width: 36px;
+  animation-delay: -2.6s;
+  background: black;
+  left: 30vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(14) {
+  border-color: black;
+  height: 26px;
+  width: 26px;
+  animation-delay: -2.8s;
+  background: black;
+  left: 37vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(15) {
+  border-color: black;
+  height: 34px;
+  width: 34px;
+  animation-delay: -3s;
+  background: black;
+  left: 42vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(16) {
+  border-color: black;
+  height: 28px;
+  width: 28px;
+  animation-delay: -3.2s;
+  background: black;
+  left: 51vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(17) {
+  border-color: black;
+  height: 26px;
+  width: 26px;
+  animation-delay: -3.4s;
+  background: black;
+  left: 54vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(18) {
+  border-color: black;
+  height: 38px;
+  width: 38px;
+  animation-delay: -3.6s;
+  background: black;
+  left: 35vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(19) {
+  border-color: black;
+  height: 24px;
+  width: 24px;
+  animation-delay: -3.8s;
+  background: black;
+  left: 65vw;
+  margin-left: 60px;
+}
+/* line 382, ../sass/scroll_construction_mob.scss */
+.cont .drip:nth-child(20) {
+  border-color: black;
+  height: 22px;
+  width: 22px;
+  animation-delay: -4s;
+  background: black;
+  left: 50vw;
+  margin-left: 60px;
+}
+
+/* line 395, ../sass/scroll_construction_mob.scss */
+.map {
+  position: absolute;
+  width: 90%;
+}
+/* line 399, ../sass/scroll_construction_mob.scss */
+.map h2 {
+  text-align: center;
+}
+/* line 403, ../sass/scroll_construction_mob.scss */
+.map table a {
+  text-decoration: none;
+  color: gray;
+  margin-left: 20px;
+}
+/* line 409, ../sass/scroll_construction_mob.scss */
+.map iframe {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  max-width: 600;
+  max-height: 450;
+  width: 100%;
+  height: 50vh;
+}
